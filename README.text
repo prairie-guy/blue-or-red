@@ -1,0 +1,6 @@
+`ideology_utils.py` should contain all functions defined as `*.py` in directory. These are meant to be used from the command line.
+
+IMPORTANT: `config.py` contains authentication tokens for twitter api
+
+Within python use:
+from ideology_utils *

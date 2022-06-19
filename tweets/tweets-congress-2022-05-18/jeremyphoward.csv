@@ -1,0 +1,178 @@
+handle,text
+jeremyphoward,"Here's why that can take a while:
+https://t.co/aKa8wkiuRW https://t.co/aVo8Z1lv41"
+jeremyphoward,"In the US there was a big increase in postal votes due to COVID, and that group voted heavily for Democrats.
+
+If there's a similar situation in Australia, I wonder if some seats that have already been claimed could turn out to go to the ALP."
+jeremyphoward,"We should be careful of getting ahead of ourselves on calling seats in the Aus Election #ausvotes.
+
+According to the AEC website and API feed, there are zero votes counted so far for declaration pre-poll, absentee, and postal. https://t.co/dW8PDb7Jay"
+jeremyphoward,@AravSrinivas @ylecun The excellent results of convnexts suggests that just convs can be pretty much the best -- when informed by ideas from transformers.
+jeremyphoward,@wightmanr That's really useful to know - and makes so much sense!
+jeremyphoward,"As the notebook mentions, the vast majority of the work for this was done by @wightmanr."
+jeremyphoward,"To play with these interactive charts of image classification performance yourself, take a look at the notebook:
+https://t.co/yc8xa29Zrc"
+jeremyphoward,I've also added a bit more info on how to read and use the plots: https://t.co/XMvkoLeeve
+jeremyphoward,"I've also created a smaller subset of families that I feel are pretty representative of the most interesting and effective ideas in modern image classification.
+
+This gives a nice quick-and-easy summary of some very practical options. https://t.co/9esBb9Q4E2"
+jeremyphoward,"I've updated the ""Which image models are best"" notebook to include some additional analysis.
+
+First, I've added a chart of training results, to go with the inferenced results that were already there.
+https://t.co/yc8xa29Zrc https://t.co/mw3aRvesrQ"
+jeremyphoward,@thecapeador @bbriniotis @PyTorch I agree. It's good to see torchvision getting some much-needed attention.
+jeremyphoward,@bradezard Do you have a link to that work?
+jeremyphoward,@ducha_aiki @JFPuget @kornia_foss @kaggle This is different to what we've observed in fastaudio fyi on a number of datasets. We've seen audio-specific augmentation work better iirc. Wonder if there's something particular about this problem.
+jeremyphoward,"@rasbt @SchmidhuberAI Unfortunately that one required a commercial license. I really wanted to try it out at the time but there wasn't even a demo I could find.
+
+But they got some fantastic early results with it."
+jeremyphoward,"...and this is how we're running the tests in notebooks, which is one of the tiniest libraries you'll ever see:
+https://t.co/BHhd8PXyPD https://t.co/hWnQ2bt1Dt"
+jeremyphoward,"If you're interested in taking a sneak peak, we're developing it under the name 'nbprocess' here:
+https://t.co/7Dl8C9D8bw"
+jeremyphoward,The new test-runner in nbdev2 is gonna be amazing. Partly because it's incredibly (incredibly!) fast. Partly because of the wonderful error messages that @HamelHusain just added. https://t.co/EdbsRw7bdN
+jeremyphoward,@LostInTangent @HamelHusain @ProjectJupyter Thanks so much :D
+jeremyphoward,"@_arohan_ @SecPerkinsStan It's also very obviously wrong. You show relative differences when running on the same hardware, which is the most important thing. (Besides which you clearly stated what hardware you used anyway!)"
+jeremyphoward,@_arohan_ @SecPerkinsStan ugh
+jeremyphoward,@_arohan_ @SecPerkinsStan What did AC originally say? I can't see it on the link AFAICT
+jeremyphoward,@LostInTangent @HamelHusain @ProjectJupyter This all sounds pretty fantastic! :D Will you be tweeting when this is ready? I don't want to miss it...
+jeremyphoward,"@julien_c @choc_eclair @cgarciae88 @MorganFunto RTX3090 is about 10x faster than M3 Pro GPU on latest @pytorch for inference, isn't it? And you can stick a few of them into a single machine (I have 3 in my PC at home). Should be much cheaper than an M3? And if you use nvidia-smi to dial back the voltage, more efficient too?"
+jeremyphoward,@micarrdc I feel like the original founders of Tesla might have had some interest in that vision too?
+jeremyphoward,@ChaskinSaroff omg
+jeremyphoward,"@iScienceLuvr ...and here's the notebook for the videos:
+https://t.co/li1Deh6O7S"
+jeremyphoward,"@iScienceLuvr If I may be so bold, I'd also like to mention our 2 videos on attention and transformers from our NLP course:
+https://t.co/BTXsbVEcbu"
+jeremyphoward,"@serious_mehta The problem is I've been writing lots of notebooks for beginners, and Kaggle doesn't count votes from people that are new to the Kaggle community - so I need more than 50 votes!"
+jeremyphoward,@alexandrecadrin OK I gotta get off twitter so I can stare at those counters for the rest of the day...
+jeremyphoward,"@ylecun I should mention that I use and appreciate FB for other things - in particular, FB Groups have been really helpful for our family."
+jeremyphoward,So close!... https://t.co/t029hAhFpT
+jeremyphoward,"@ylecun Twitter threads can certainly be improved by using the platform better. Each tweet ideally is a reasonably well contained thought, ideally with a picture and/or a link with more details. People can comment on the particular piece they have thoughts about."
+jeremyphoward,@Cogitoe79321738 @KiroSasuke It's just the defaults for the plotting library.
+jeremyphoward,@pjlbrunelle Yeah I found it eventually. Needed a magnifying glass...
+jeremyphoward,@austinvhuang ...and I suspect game engines are going to become more and more important outside of just creating games.
+jeremyphoward,@KiroSasuke I don't find that response particular constructive or welcome FYI
+jeremyphoward,@DanevskiyD Maybe - but I suspect that training a resnet or something more modern with a fully connected head would give something better.
+jeremyphoward,@taha_yssne Nowadays I'd go with convnext or resnet-d or regnet.
+jeremyphoward,"ICYMI, here's the analysis:
+https://t.co/yc8xa29Zrc"
+jeremyphoward,"Also, the ""best, Michael"" doesn't even have the same name as the from-address on the email.
+
+Maybe at least try to make it somewhat personal?"
+jeremyphoward,"FYI @fb_engineering, this is pretty inappropriate. I guess maybe *one* unsolicited outreach is OK, but this continued nagging and only providing options to have you continue to nag me in the future is definitely not OK.
+
+It's spam. https://t.co/9Hjsm5jXYD"
+jeremyphoward,Don't use VGG. https://t.co/kyWQkQJGjU
+jeremyphoward,"We now know that clean air is the secret to reducing COVID spread, but almost nothing is done about that in Australia. HEPA filters and respirators are nowhere to be seen.
+
+Vaccine availability and uptake amongst children is also poor here."
+jeremyphoward,"Sadly, after being a world leader in effective COVID response, Australia has now totally dropped the ball and case rates are the highest in the world. This may create a huge long-term impact on our health and economy due to long covid."
+jeremyphoward,"Our discussion was inspired by this story in the @nytimes:
+https://t.co/W0hl0qs4YR"
+jeremyphoward,"Thanks @abc7kristensze for having me on her show to talk about how Australia managed to achieve a COVID death rate 10x lower than the US.
+
+https://t.co/LWkANmzBWo"
+jeremyphoward,"@EMBrains In most places in industry it's normal, expected, and even encouraged to use the same slides, explanations, etc multiple times.
+
+It's more efficient, and helps build on one's own previous work by simply including bits of it directly."
+jeremyphoward,"@EMBrains This is great - thanks Emily!
+
+One thing that stood out for me -- I'd love to see a more nuanced take on self-plagiarism. I really don't think it fits with the kidnapping or morally-wrong ideas. Maybe say: although it's not the same thing, it's treated the same way, so be careful"
+jeremyphoward,@PMGPSC Oh yes
+jeremyphoward,"@ylecun Thanks Yann, that's a great summary.
+
+(FWIW, I much prefer the presentation of this on Twitter over the FB link you provided. I also find the discussions on Twitter tend to be more interesting since they include a wider range of points of view.)"
+jeremyphoward,@vipulved @satyanadella Yeah I've given up on it for that reason. And all the registration and licensing stuff is always far too complicated.
+jeremyphoward,@giffmana Oh yeah I'd totally forgotten about that!
+jeremyphoward,@ljquintanilla @nicolaisucks @art_j @Pehdrew_ @atilimgunes @dsymetweets I looked at it ages ago but I can see it's come a very long way since then! It looks really exciting. I definitely need to do a deep dive!
+jeremyphoward,"@abdalazizrashid Yeah swift has amazing potential. I mentioned it just yesterday.
+
+Is there a problem with being enthusiastic about multiple things?"
+jeremyphoward,@dsymetweets @migueldeicaza @huggingface (I do agree with you BTW - just pointing out this particular one might be an opportunity)
+jeremyphoward,@dsymetweets @migueldeicaza Mind you @huggingface tokenizers is written in Rust... Should be easy enough to integrate with F#?
+jeremyphoward,@craigacp @oscarsm85309043 ONNX Runtime works with PyTorch.
+jeremyphoward,@craigacp @oscarsm85309043 I'm biased too - but I wouldn't be targeting TF nowadays. Either PyTorch or Jax would likely be more future-proof.
+jeremyphoward,@craigacp @oscarsm85309043 I think kotlin would be much more suitable. Those things are minimal starting points to even get started as a DL language.
+jeremyphoward,"@art_j @Pehdrew_ @ljquintanilla Unfortunately there doesn't seem to be anything that really takes advantage of F#'s strengths - they're just wrappers for libs designed for Python.
+
+(Still a great start, mind you!)"
+jeremyphoward,@miguelalonsojr @unity Wow can't wait to see it!
+jeremyphoward,@tuvuumass Thanks!
+jeremyphoward,I'm looking for something to help my students understand model structure and fine-tuning for pretrained NLP models.
+jeremyphoward,"Is there anything that shows what different layers of an NLP model learns, as well as Zeiler and Fergus showed what different layers of an image model learns?
+
+https://t.co/uGoFKvvY5O https://t.co/3dWwq2jute"
+jeremyphoward,@migueldeicaza Thanks @dsymetweets! :)
+jeremyphoward,@lmeyerov Yes great example of practical innovation!
+jeremyphoward,"Encouragingly, there's a lot of activity happening on TorchSharp, so who knows, maybe there's a chance this will actually go somewhere...
+
+https://t.co/B4f8iWrsnv"
+jeremyphoward,"But really, F# is a beautiful language, the .Net ecosystem is deep, C#/F# are cross-platform and *very* fast. With 1 language you can write CLI scripts, web apps, models, …
+
+F# has stuff like quasi-quotations and operator overloading which are critical for modern deep learning."
+jeremyphoward,"Controversial opinion - the language best placed to win at deep learning is:
+F#.
+
+2nd place:
+C#.
+
+(I don't expect this potential to ever be met, since MSFT consistently under-invest in F# and look externally for anything to do with data. Like betting on Hadoop instead of Dryad.)"
+jeremyphoward,"This is such an amazing project, and a brilliant writeup.
+
+Check out what can be done with modern deep learning approaches, combining image and text models in a really practical and thoughtful way. https://t.co/IMUyCxQlbd"
+jeremyphoward,"Once you've done that, you're ready to read the full notebook showing how to use a deep learning framework:
+
+https://t.co/uy4QYqwsNY"
+jeremyphoward,"I recommend reading my ""from scratch"" notebook first, if you haven't already, to understand what's happening underneath the hood when we train a model in @fastdotai and @PyTorch.
+
+https://t.co/Z5NFdwET3G"
+jeremyphoward,Getting predictions for the test set and preparing them for submission to @kaggle is easy too! https://t.co/mLpMDJGlXz
+jeremyphoward,We can even create an ensemble -- it's just a case of re-running our training code a few times https://t.co/C6Ge5pGeUf
+jeremyphoward,Then we're ready to fit the model! https://t.co/uYx5zU6js0
+jeremyphoward,We can quickly see what an appropriate learning rate to use will be https://t.co/D3swkJz9I7
+jeremyphoward,We can get all the data ready for processing by running a single cell. https://t.co/jQzkvBNEaT
+jeremyphoward,"Last week I published a notebook showing how to create and train a neural net from scratch on real data.
+
+This week, I'll show you how to do the same thing with the @fastdotai and @PyTorch libraries -- and you'll see how they save time and improve results.
+https://t.co/uy4QYqwsNY"
+jeremyphoward,@rasbt ULMFiT is an LSTM that gets 95% on IMDB.
+jeremyphoward,@bradlarson @passivelogic @clattner_llvm Wow that's amazing.
+jeremyphoward,"@strickvl @dyalogapl Also I'm keen for an excuse to try APL more - I've not really used it much at all.
+
+Sometimes I find J hard to read and the parts of speech hard to remember, because they can all look a bit too similar to each other."
+jeremyphoward,@strickvl @dyalogapl Partly it's because I think the way trains and function defs work in APL might be a bit more intuitive/easier to explain.
+jeremyphoward,"@strickvl @dyalogapl Great question! Partly it was because my students were having fun playing with alternate keyboards (greek, arabic, etc) so I figured they'd love the symbols.
+
+They're little kids, so they loved the idea they could show their parents something that would look hackerish and magical"
+jeremyphoward,"@OfficialLoganK @JuliaLanguage Yes, but I think I've already given it before...
+
+Invest in deep learning. Keep simple things simple. Make small things fast and only use what memory you really need. Make it fast and easy to deploy -- websites, CLI tools, and services."
+jeremyphoward,"@bradlarson @passivelogic That's so cool.
+
+I'd be delighted to support you folks any way I can!
+
+I'm sure @clattner_llvm must be thrilled to see this progress too :D"
+jeremyphoward,"Nice new feature in J that I hadn't noticed before
+https://t.co/xVdMYLsQFH https://t.co/ccbT8vc3g9"
+jeremyphoward,"Sadly the project fizzled out after its founder and key sponsor left Google, but I've always felt that it had huge potential -- right up there with @JuliaLanguage.
+
+It would be pretty awesome if it could be brought back to life!"
+jeremyphoward,"TIL some awesome people have brought the Swift for Tensorflow project back to life!
+https://t.co/DkiaMByfw4"
+jeremyphoward,"@usual_suspect89 @AbraarKaran This is not an unwanted mitigation or mandate
+https://t.co/Ak0MeFxQFd"
+jeremyphoward,@michaelwaskom Looking good!...
+jeremyphoward,"Another reason to try to avoid covid infection (e.g wear a mask, use a HEPA filter, get vax boosters) is that it's very expensive.
+
+(True financial impact of Long Covid may be worse than shown -- 12.4% is a low guess of p(LC), and later infections may be worse than first one) https://t.co/JS6otDmeWw"
+jeremyphoward,@_joaogui1 @arraycast @mrbartonmaths I wonder if I'm the first person to try teaching math to kids from the age of 6 using these amazing tools...
+jeremyphoward,"@_joaogui1 @arraycast @mrbartonmaths Interestingly, however, I've yet to find a single math educator or education researcher who's mentioned Ken Iverson's work -- he actually built an entire math curriculum using J/APL, in conjunction with some great math teachers!"
+jeremyphoward,"@_joaogui1 @arraycast Yes I recommend @mrbartonmaths . It'll take me years to catch up on them all -- and a few years to read all the research papers he's got on his site!
+
+I'm working through them as best as I can... :)"
+jeremyphoward,"@_joaogui1 @arraycast IIRC that was thanks to Roger Hui that APL got chains, and the change compared to J"
+jeremyphoward,"@_joaogui1 @arraycast I've always been a J person, not an APL person -- mainly due to the licensing issues that used to be around Dyalog. But now that it's so open, I'm really liking it. I like the chain rules better than J's in particular"
+jeremyphoward,"@_joaogui1 @arraycast No I haven't been, since I've only been listening to podcasts about education for the last few months. I should probably check it out sometime though since I've heard many great things about it!"
+jeremyphoward,"They also much preferred it to regular math notation, with simpler concepts like '-' is only used for subtraction now (not also used for negation) and there's no operator precedence rules to worry about! https://t.co/EULcJqoFzR"
+jeremyphoward,"Change of plan. We switched to using @dyalogapl APL for learning sequences and series in our math lesson, and the kid's like it *so* much better than Python list comprehensions! https://t.co/XmvFn66wis https://t.co/RnyP2iWTaI"
+jeremyphoward,@Michael_b_evans How?
