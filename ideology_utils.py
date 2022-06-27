@@ -1,4 +1,4 @@
-import tweepy, csv, sys, re, time, warnings
+import transformers, datasets, tweepy, csv, sys, re, time, warnings
 from fastai.text.all import *
 from datetime import date
 from pathlib import Path
@@ -64,7 +64,7 @@ def tweets2df(path):
                                            for f in path.ls() if path.ls()[0].suffix == f.suffix], ignore_index=True)
     return("usage: tweets2df(path), where `path` is a `file` or `dir` of type `csv` or `json`")
 
-def preprocess_tweet(text, max_len = 500):
+def preprocess_tweet(text, max_len = 280):
     "Preprocess text in tweets, fixing @<name> -> @user, http://something -> http"
     new_text = []
     for t in text.split(" "):
@@ -74,15 +74,12 @@ def preprocess_tweet(text, max_len = 500):
         t = re.sub('[\\r,\\n]','', t)
         t = " ".join(t.split())
         new_text.append(t)
-    #new_text = new_text.str.encode("ascii", "ignore").str.decode('ascii') # Strip out pnon-ascii characters
     return " ".join(new_text)[:max_len]
 
-def preprocess_tweets(df, max_len = 500, text_col='text', proc_func = preprocess_tweet):
+def preprocess_tweets(df, max_len = 280, text_col='text', proc_func = preprocess_tweet):
     "Preprocess all tweets in a `df` of `max length` with col name of `text`"
     df = df.dropna().reset_index(drop=True)
-    df[text_col] = df[text_col].apply(proc_func)
-    df[text_col] = df[text_col].str[:max_len]
-    #df[text_col] = df[text_col].str.encode("ascii", "ignore").str.decode('ascii')
+    df[text_col] = df[text_col].apply(lambda x: proc_func(x, max_len))
     return df
 
 def get_tweets_of_legislators(path='tweets', proc_func=None):
@@ -178,6 +175,45 @@ def compute_metrics(preds_labels):
     preds, labels = preds_labels
     preds = np.argmax(preds, axis=1)
     return metric.compute(predictions=preds, references=labels)
+
+def score_tfms(fname, trainer_tokz_pair):
+    """
+    Takes a `handle`.[csv,json],  [trainter, tokz] (or load_tfms_model(model_-path)) and returns [handle,s1,s2,n]
+    where, s1 is the mean of the Conservative probability of each of the tweets and s2 is the mean number of tweets scored Conservative.
+    """
+    transformers.utils.logging.set_verbosity(40)
+    datasets.disable_progress_bar()
+    if type(fname) != 'pathlib.PosixPath': fname = Path(fname)
+    handle = fname.stem
+    trainer,tokz = trainer_tokz_pair
+    try:
+        df = preprocess_tweets(tweets2df(fname))
+        ds_eval = df2ds(df, tokz)
+        preds = predict_tfms(ds_eval, trainer)
+        n = len(preds)
+        s1  = round(sum(np.argmax(preds.numpy(),axis=1))/n,2)
+        d,r = sum(preds.numpy())/n
+        s2  = round(r,2)
+        res = [handle,s1,s2,n]
+        print(res)
+    except:
+        res = [handle,0,0,0]
+    transformers.utils.logging.set_verbosity(30)
+    datasets.enable_progress_bar()
+    return(res)
+
+def scores_of_group_tfms(dir_path, trainer_tokz_pair):
+    """
+    Takes `dir_path` of `handle`.[csv|json] files and [trainter,tokz] or (load_model_tfms(model_path)).
+    Returns a dict of scores {handle1,[s1,s2,n], ...}
+    """
+    if type(dir_path) != 'pathlib.PosixPath': dir_path = Path(dir_path)
+    scores = {}
+    for f in dir_path.ls():
+        handle, s1, s2, n = score_tfms(f,trainer_tokz_pair)
+        if n != 0: scores[handle] = [s1, s2, n]
+    return(scores)
+
 
 # Utils
 def tok_func(x): return tokz(x["input"])
